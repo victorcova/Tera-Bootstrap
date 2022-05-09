@@ -1,54 +1,63 @@
 {
     "page": 1,
     "per_page": 6,
-    "total": 12,
-    "total_pages": 2,
-    "data": [
+    "total": 6,
+    "total_pages": 1,
+    
+    "cursos": [
       {
         "id": 1,
+        "nome_curso": "Curso de Javascript Básico",
         "rating": 4.8,
-        "prof_name": "César Oliveira",
         "qtd_aulas": 57,
-        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        "nome_prof": "Rondson Lima",
+        "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
+        "avatar": "img/bubbly-imgs/tag_cursos/tag-code.jpg"
       },
       {
         "id": 2,
-        "email": "janet.weaver@reqres.in",
-        "first_name": "Janet",
-        "last_name": "Weaver",
-        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        "nome_curso": "Curso de Gastronomia",
+        "rating": 4.3,
+        "qtd_aulas": 44,
+        "nome_prof": "Andressa Queiroz",
+        "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
+        "avatar": "img/bubbly-imgs/tag_cursos/tag-gastronomia.jpg"
       },
       {
         "id": 3,
-        "email": "emma.wong@reqres.in",
-        "first_name": "Emma",
-        "last_name": "Wong",
-        "avatar": "https://reqres.in/img/faces/3-image.jpg"
-      },
-      {
-        "id": 4,
-        "email": "eve.holt@reqres.in",
-        "first_name": "Eve",
-        "last_name": "Holt",
-        "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        "nome_curso": "Curso de Empreendedorismo",
+        "rating": 4.1,
+        "qtd_aulas": 112,
+        "nome_prof": "Pablo Hernan",
+        "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
+        "avatar": "img/bubbly-imgs/tag_cursos/tag-empreendedorismo.jpg"
       },
       {
         "id": 5,
-        "email": "charles.morris@reqres.in",
-        "first_name": "Charles",
-        "last_name": "Morris",
-        "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        "nome_curso": "Curso de Música",
+        "rating": 4.5,
+        "qtd_aulas": 86,
+        "nome_prof": "Flávia Carvalho",
+        "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
+        "avatar": "img/bubbly-imgs/tag_cursos/tag-musica.jpg"
+      },
+      {
+        "id": 5,
+        "nome_curso": "Curso de Marketing",
+        "rating": 4.3,
+        "qtd_aulas": 88,
+        "nome_prof": "Mirna Franco",
+        "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
+        "avatar": "img/bubbly-imgs/tag_cursos/tag-marketing.jpg"
       },
       {
         "id": 6,
-        "email": "tracey.ramos@reqres.in",
-        "first_name": "Tracey",
-        "last_name": "Ramos",
-        "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        "nome_curso": "Curso de Inglês Nível I",
+        "rating": 4.9,
+        "qtd_aulas": 40,
+        "nome_prof": "Patrícia Holmes",
+        "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
+        "avatar": "img/bubbly-imgs/tag_cursos/tag-ingles.jpg"
       }
-    ],
-    "support": {
-      "url": "https://reqres.in/#support-heading",
-      "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
-    }
+    ]    
   }
