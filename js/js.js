@@ -88,7 +88,7 @@ fetch(url, options) // fez a promise
             btnVisualizar.setAttribute('id', idBtVisualizar);
             btnVisualizar.setAttribute('type','button');
             btnGroup.appendChild(btnVisualizar);
-            document.getElementById(idBtVisualizar).append('Visualizar');
+            document.getElementById(idBtVisualizar).append('Visualizar Perfil');
 
             let btnEditar = document.createElement('button')
             btnEditar.setAttribute('class','btn btn-sm btn-outline-secondary');
@@ -96,15 +96,15 @@ fetch(url, options) // fez a promise
             btnEditar.setAttribute('id', idBteditar);
             btnEditar.setAttribute('type','button');
             btnGroup.appendChild(btnEditar);
-            document.getElementById(idBteditar).append('Editar');
+            document.getElementById(idBteditar).append('Curtir');
 
-            let idSmall = document.createElement('button')
-            idSmall.setAttribute('class','text-muted border-0');
-            let idTxtSmall = 'idTxtSmall'+[i];
-            idSmall.setAttribute('id', idTxtSmall);
-            idSmall.setAttribute('type','button');
-            divBetween.appendChild(idSmall);
-            document.getElementById(idTxtSmall).append('CLI-00'+usuarios[i].id);
+            // let idSmall = document.createElement('button')
+            // idSmall.setAttribute('class','text-muted border-0');
+            // let idTxtSmall = 'idTxtSmall'+[i];
+            // idSmall.setAttribute('id', idTxtSmall);
+            // idSmall.setAttribute('type','button');
+            // divBetween.appendChild(idSmall);
+            // document.getElementById(idTxtSmall).append('CLI-00'+usuarios[i].id);
                             
         }
     })
