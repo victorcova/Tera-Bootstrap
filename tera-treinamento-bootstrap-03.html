@@ -42,7 +42,7 @@
                           </ul>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-black" href="#">Afilie-se</a>
+                          <a class="nav-link text-black" href="#">Afilie-se</a> 
                         </li>                            
                     </ul> 
                           
@@ -50,7 +50,7 @@
                         <input type="search" class="form-control form-control-dark" placeholder="Encontre seu curso..." aria-label="Buscar">
                     </form>
             
-                    <div class="text-end">
+                    <div class="text-end pr-3">
                         <button type="button" class="btn btn-outline-info me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEntrar" aria-controls="offcanvasEntrar">Entrar</button>
                         <button type="button" class="btn btn-danger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCadastrar"
                         aria-controls="offcanvasCadastrar">Cadastre-se</button>
@@ -63,10 +63,11 @@
     </header>
 
   
-    <!-- OFF CANVAS ENTRAR -->          
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasEntrar" aria-labelledby="offcanvasEntrarLabel">
+    <!-- OFF CANVAS ENTRAR -->  
+    <section id="OffCanvasEntrar" >
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasEntrar" aria-labelledby="offcanvasEntrarLabel">
         <div class="offcanvas-header">
-          <button type="button" class="btn-close text-reset align-end" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+            <button type="button" class="btn-close text-reset align-end" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
         </div>
 
         <div class="offcanvas-body">
@@ -76,93 +77,128 @@
             <div class="form-floating mb-3">
                 <input type="email" class="form-control border-info" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email</label>
-              </div>
-              <div class="form-floating">
+                </div>
+                <div class="form-floating">
                 <input type="password" class="form-control border-info" id="floatingPassword" placeholder="Senha">
                 <label for="floatingPassword">Senha</label>
-              </div>
+                </div>
 
-              <div class="form-check form-switch pt-3">
+                <div class="form-check form-switch pt-3">
                 <input class="form-check-input bg-info border-0" type="checkbox" role="switch" id="remember" checked>
                 <label class="form-check-label" for="remember">Lembrar dados</label>
-              </div>
+                </div>
 
-              <div class="form-floating mb-3 pt-3">
+                <div class="form-floating mb-3 pt-3">
                 <button class="w-100 btn btn-lg btn-info" type="submit">Entrar</button>                
-              </div>
+                </div>
 
-              <div class="form-floating mb-3 pt-3">
+                <div class="form-floating mb-3 pt-3">
                 <h4 class="h4 mb-4 fw-normal text-black-50 fs-6">Não tem uma conta? <span class="badge bg-info" style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCadastrar"
                     aria-controls="offcanvasCadastrar">Criar</span></h4>
-              </div>
+                </div>
         </div>
-      </div>
+        </div>
+    </section>        
 
 
     <!-- OFF CANVAS CADASTRAR -->          
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCadastrar" aria-labelledby="offcanvasCadastrarLabel">
-        <div class="offcanvas-header">
-          <button type="button" class="btn-close text-reset align-end" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-        </div>
-
-        <div class="offcanvas-body">
-
-            <h1 class="h3 mb-4 fw-bolder text-danger">Cadastre-se</h1>
-            
-            <div class="form-floating mb-2">
-                <input type="text" class="form-control border-danger" id="floatingNome" placeholder="Nome">
-                <label for="floatingNome">Nome</label>
-            </div>
-            <div class="form-floating mb-2">
-                <input type="text" class="form-control border-danger" id="floatingSobrenome" placeholder="Senha">
-                <label for="floatingSobrenome">Sobrenome</label>
-            </div>
-            <div class="form-floating mb-2">
-                <input type="email" class="form-control border-danger" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email</label>
-            </div>
-            <div class="form-floating mb-2">
-                <input type="password" class="form-control border-danger" id="floatingPSW" placeholder="Senha">
-                <label for="floatingPSW">Senha</label>
-            </div>            
-
-            <div class="form-check form-switch pt-3">
-                <input class="form-check-input bg-danger border-0" type="checkbox" role="switch" id="tipoAluno" checked>
-                <label class="form-check-label" for="tipoAluno">Cadastrar como <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Aluno é aquele que estuda os cursos na Bubbly"><u>aluno?</u></span></label>
-            </div>
-            <div class="form-check form-switch pt-3">
-                <input class="form-check-input bg-info border-0" type="checkbox" role="switch" id="tipoAfiliado">
-                <label class="form-check-label" for="tipoAfiliado">Cadastrar como <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Afiliado é aquele que cadastra cursos e aulas na Bubbly"><u>afiliado?</u></span></label>
+    <section id="OffCanvasCadastrar" >
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCadastrar" aria-labelledby="offcanvasCadastrarLabel">
+            <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset align-end" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
             </div>
 
-            <div class="form-floating mb-3 pt-3">
-                <button class="w-100 btn btn-lg btn-danger" type="submit">Cadastrar</button>                
-            </div>
+            <div class="offcanvas-body">
 
-            <div class="form-floating mb-3 pt-3">
-                <h4 class="h4 mb-4 fw-normal text-black-50 fs-6">Já tem uma conta? <span class="badge bg-danger" style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEntrar" aria-controls="offcanvasEntrar">Entrar</span></h4>
+                <h1 class="h3 mb-4 fw-bolder text-danger">Cadastre-se</h1>
+                
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control border-danger" id="floatingNome" placeholder="Nome">
+                    <label for="floatingNome">Nome</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="text" class="form-control border-danger" id="floatingSobrenome" placeholder="Senha">
+                    <label for="floatingSobrenome">Sobrenome</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="email" class="form-control border-danger" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="password" class="form-control border-danger" id="floatingPSW" placeholder="Senha">
+                    <label for="floatingPSW">Senha</label>
+                </div>            
+
+                <div class="form-check form-switch pt-3">
+                    <input class="form-check-input bg-danger border-0" type="checkbox" role="switch" id="tipoAluno" checked>
+                    <label class="form-check-label" for="tipoAluno">Cadastrar como <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Aluno é aquele que estuda os cursos na Bubbly"><u>aluno?</u></span></label>
+                </div>
+                <div class="form-check form-switch pt-3">
+                    <input class="form-check-input bg-info border-0" type="checkbox" role="switch" id="tipoAfiliado">
+                    <label class="form-check-label" for="tipoAfiliado">Cadastrar como <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Afiliado é aquele que cadastra cursos e aulas na Bubbly"><u>afiliado?</u></span></label>
+                </div>
+
+                <div class="form-floating mb-3 pt-3">
+                    <button class="w-100 btn btn-lg btn-danger" type="submit">Cadastrar</button>                
+                </div>
+
+                <div class="form-floating mb-3 pt-3">
+                    <h4 class="h4 mb-4 fw-normal text-black-50 fs-6">Já tem uma conta? <span class="badge bg-danger" style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEntrar" aria-controls="offcanvasEntrar">Entrar</span></h4>
+                </div>
             </div>
-        </div>
-      </div>      
+        </div>      
+    </section>
 
     <!-- BANNER PRINCIPAL -->    
-    <div class="position-relative overflow-hidden text-center bg-light" style="background-image: url(img/bubbly-imgs/bkgs/bkg-1.jpg);">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 font-weight-bolder text-white pt-4">Colocamos seu curso em evidência para o mundo!</h1>
-          <p class="lead font-weight-normal text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio commodi cum qui repudiandae explicabo a similique! Accusantium dolorem non iusto quasi soluta cumque facere repellendus sequi.</p>
-          <a class="btn btn-outline-secondary border-light text-white" href="#">Saiba mais</a>
+    <section id="bannerPrincipal" >
+        <div class="row p-0">
+            <div class="position-relative overflow-hidden text-center bg-light" style="background-image: url(img/bubbly-imgs/bkgs/bkg-1.jpg);">
+                <div class="col-md-8 p-lg-5 mx-auto my-5 p-4">
+                <h1 class="display-4 font-weight-bolder text-white pt-4">Colocamos seu curso em evidência para o mundo!</h1>
+                <p class="lead font-weight-normal text-white p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio commodi cum qui repudiandae explicabo a similique! Accusantium dolorem non iusto quasi soluta cumque facere repellendus sequi.</p>
+                <a class="btn btn-outline-secondary border-light text-white" href="#">Saiba mais</a>
+                </div>
+                <div class="product-device shadow-sm d-none d-md-block"></div>
+                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+            </div> 
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-      </div>
-    
+    </section>
 
 
+    <!-- ROW FEATURETTES MARKETING -->    
+    <section id="featurettes" >
+        <div class="row p-5" style="background-color: #f9f9f9;">
+            <div class="container marketing">
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                        <h2 class="featurette-heading">Lorem ipsum dolor <span class="text-muted">It’ll blow your mind.</span></h2>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos.</p>
+                        </div>                
+                        <div class="col-md-5 align-content-center">
+                            <img src="img/bubbly-imgs/bkgs/bkg-7.jpg" class="rounded-3 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                        </div>
+                    </div>        
+            </div>
+        </div>
 
-    <!-- CARDS CAROUSEL -->                  
-  
-    <section class="pt-5 pb-5">
-        <div class="container">
+        <div class="row p-5" style="background-color: tomato;">
+            <div class="container marketing">
+                    <div class="row featurette">
+                        <div class="col-md-5">
+                            <img src="img/bubbly-imgs/bkgs/bkg-6.jpg" class="rounded-3 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="featurette-heading text-black pt-3">Sit amet consectetur <span class="text-light">It’ll blow your mind.</span></h2>
+                            <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos.</p>
+                            </div>                                
+                    </div>        
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDS CAROUSEL CURSOS EM DESTAQUE -->
+    <section id="cursosDestaque">
+        <div class="container pt-5 pb-5">
             <div class="row">
                 <div class="col-xs-6 text-left">
                     <h2 class="mb-3">Cursos em destaque:</h2>
@@ -402,13 +438,26 @@
             </div>
         </div>
     </section>
-    </div>
+
+
+    <!-- TESTIMONIAL CARDS -->       
+    <section class="row container-fluid bg-dark p-5 m-0" id="testimonials">
+        <div class="container" id="myCards">
+            <div class="col-xs text-left text-light">
+                <h2 class="mb-3">O que dizem sobre nós:</h2>
+            </div>      
+            <div class="row row-cols-md-3" id="row">
+                <!-- GERAÇÃO DE CARDS VIA API -->
+            </div>
+        </div>       
+    </section>
+    
     
 
     <!-- FOOTER -->
     <div class="container">
 
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3">
            
             <div class="col-md-4 d-flex align-items-center">                
                 <a class="navbar-brand" style="cursor: pointer;">
