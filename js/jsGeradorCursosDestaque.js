@@ -82,7 +82,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
             let idNomeProfCurso = 'idNomeProfCurso'+[i];
             liNomeProfCurso.setAttribute('id',idNomeProfCurso);
             cardBody.appendChild(liNomeProfCurso);
-            document.getElementById(idNomeProfCurso).append(`Professor: ${cursos[i].nome_prof}`);
+            document.getElementById(idNomeProfCurso).append(`Professor(a): ${cursos[i].nome_prof}`);
             
 
             let pDescricao = document.createElement('p')
