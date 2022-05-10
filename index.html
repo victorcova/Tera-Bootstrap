@@ -16,7 +16,7 @@
 <body>
     <!-- NAVBAR -->       
     <section id="navBar" >
-        <header class="p-2 my-2 bg-light text-black-50">
+        <header class="p-2 my-auto bg-light text-black-50">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
                     <div class="container-fluid">
@@ -174,8 +174,43 @@
             <div class="container marketing">
                     <div class="row featurette">
                         <div class="col-md-7">
-                        <h2 class="featurette-heading">Lorem ipsum dolor <span class="text-muted">It’ll blow your mind.</span></h2>
-                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos.</p>
+                            <h2 class="featurette-heading">Lorem ipsum dolor <span class="text-muted">It’ll blow your mind.</span></h2>
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos.</p>
+                            
+                            <div class="input-group" id="BuscarCurso">
+                                <span class="input-group-text">Buscar curso:</span>
+                                <input type="text" aria-label="BuscarCurso" class="form-control">
+                                <!-- <input type="text" aria-label="Last name" class="form-control"> -->
+                                <button type="button" class="btn btn-outline-secondary">Buscar</button>
+                            </div>
+
+                            <div class="input-group border p-2 mb-4 mt-4 rounded-3">
+                                <table class="table table-hover" id="respostaBusca">
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>                                            
+                                            <th scope="col">Cursos encontrados:</th>
+                                            <th scope="col">Avaliação:</th>                                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>                                            
+                                            <td><a href="#">Javascript Básico</a></td>
+                                            <td>4.7</td>                                            
+                                          </tr>
+                                          <tr>                                            
+                                            <td><a href="#">HTML + Jávascript + CSS</a></td>
+                                            <td>4.3</td>                                            
+                                          </tr>
+                                          <tr>                                                                                        
+                                            <td><a href="#">Javascript Avançado</a></td>
+                                            <td>3.9</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </table>
+                            </div>
+
                         </div>                
                         <div class="col-md-5 align-content-center">
                             <img src="img/bubbly-imgs/bkgs/bkg-7.jpg" class="rounded-3 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
@@ -186,14 +221,35 @@
 
         <div class="row p-5" style="background-color: tomato;">
             <div class="container marketing">
+
                     <div class="row featurette">
                         <div class="col-md-5">
                             <img src="img/bubbly-imgs/bkgs/bkg-6.jpg" class="rounded-3 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
                         </div>
                         <div class="col-md-7">
                             <h2 class="featurette-heading text-black pt-3">Sit amet consectetur <span class="text-light">It’ll blow your mind.</span></h2>
-                            <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos.</p>
-                            </div>                                
+                            <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos. Corrupti doloribus:</p>
+
+                            <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2">                            
+
+                            <div class="form-check m-1 mt-2">
+                                <input class="form-check-input btn-outline-light" type="checkbox" value="aceitaTermos" id="aceitaTermosLgpd" checked disabled>
+                                <label class="form-check-label text-light" for="aceitaTermosLgpd">
+                                    LGPD: Permito o uso do meu e-mail
+                                </label>
+                              </div>
+                              <div class="form-check m-1">
+                                <input class="form-check-input" type="checkbox" value="querOfertas" id="querOfertas" checked>
+                                <label class="form-check-label text-light" for="querOfertas">
+                                    Desejo receber ofertas e promoções
+                                </label>
+                              </div>
+
+                            
+                            <button class="btn btn-outline-light mt-2" type="button" id="button-addon2">Receber ofertas</button>
+                            
+
+                        </div>
                     </div>        
             </div>
         </div>
@@ -210,7 +266,13 @@
                     
                 </div>
             </div>
+            <div class="btn-group pt-4 col-auto m-auto" role="group" aria-label="Mais opções">
+                <button type="button" class="btn btn-outline-secondary">Ver todos os nossos cursos</button>
+                <button type="button" class="btn btn-outline-secondary">Buscar um curso</button>
+                <button type="button" class="btn btn-outline-secondary">Adicionar o seu próprio curso</button>
+            </div>
         </div>
+        
     </section>
 
 
@@ -225,7 +287,7 @@
                     
                 </div>
             </div>       
-        </div>
+        </div>     
     </section>
     
     
