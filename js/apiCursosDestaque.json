@@ -7,48 +7,48 @@
     "cursos": [
       {
         "id": 1,
-        "nome_curso": "Curso de Javascript Básico",
+        "nome_curso": "Cursos de Tecnologia",
         "rating": 4.8,
         "qtd_aulas": 57,
         "nome_prof": "Rondson Lima",
         "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
-        "avatar": "img/bubbly-imgs/tag_cursos/tag-code.jpg"
+        "avatar": "img/bubbly-imgs/tag_cursos/avatar-tecnologia.jpg"
       },
       {
         "id": 2,
-        "nome_curso": "Curso de Gastronomia",
+        "nome_curso": "Cursos de Gastronomia",
         "rating": 4.3,
         "qtd_aulas": 44,
         "nome_prof": "Andressa Queiroz",
         "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
-        "avatar": "img/bubbly-imgs/tag_cursos/tag-gastronomia.jpg"
+        "avatar": "img/bubbly-imgs/tag_cursos/avatar-gastronomia.jpg"
       },
       {
         "id": 3,
-        "nome_curso": "Curso de Empreendedorismo",
+        "nome_curso": "Cursos de Empreendedorismo",
         "rating": 4.1,
         "qtd_aulas": 112,
         "nome_prof": "Pablo Hernan",
         "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
-        "avatar": "img/bubbly-imgs/tag_cursos/tag-empreendedorismo.jpg"
+        "avatar": "img/bubbly-imgs/tag_cursos/avatar-empreendedorismo.jpg"
       },
       {
         "id": 5,
-        "nome_curso": "Curso de Música",
+        "nome_curso": "Cursos de Música",
         "rating": 4.5,
         "qtd_aulas": 86,
         "nome_prof": "Flávia Carvalho",
         "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
-        "avatar": "img/bubbly-imgs/tag_cursos/tag-musica.jpg"
+        "avatar": "img/bubbly-imgs/tag_cursos/avatar-musica.jpg"
       },
       {
         "id": 5,
-        "nome_curso": "Curso de Marketing",
+        "nome_curso": "Cursos de Marketing",
         "rating": 4.3,
         "qtd_aulas": 88,
         "nome_prof": "Mirna Franco",
         "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
-        "avatar": "img/bubbly-imgs/tag_cursos/tag-marketing.jpg"
+        "avatar": "img/bubbly-imgs/tag_cursos/avatar-marketing.jpg"
       },
       {
         "id": 6,
@@ -57,7 +57,7 @@
         "qtd_aulas": 40,
         "nome_prof": "Patrícia Holmes",
         "descr_curso": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi esse optio sapiente accusantium ipsa repudiandae officia.",
-        "avatar": "img/bubbly-imgs/tag_cursos/tag-ingles.jpg"
+        "avatar": "img/bubbly-imgs/tag_cursos/avatar-musica-ingles.jpg"
       }
     ]    
   }

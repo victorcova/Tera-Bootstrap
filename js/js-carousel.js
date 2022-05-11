@@ -1,5 +1,5 @@
 var multipleCardCarousel = document.querySelector(
-  "#carouselExampleControls"
+  "#controlesCarousel"
   );
 
   if (window.matchMedia("(min-width: 768px)").matches) {
@@ -11,23 +11,21 @@ var multipleCardCarousel = document.querySelector(
   var cardWidth = $(".carousel-item").width();
   var scrollPosition = 0;
 
-  $("#carouselExampleControls .carousel-control-next").on("click", function () {
+  $("#controlesCarousel .carousel-control-next").on("click", function () {
     if (scrollPosition < carouselWidth - cardWidth * 4) {
     scrollPosition += cardWidth;
 
-  $("#carouselExampleControls .carousel-inner").animate(
+  $("#controlesCarousel .carousel-inner").animate(
   { scrollLeft: scrollPosition },
     600
-  );
-
-  }
+  );}
   });
 
-  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+  $("#controlesCarousel .carousel-control-prev").on("click", function () {
   if (scrollPosition > 0) {
   scrollPosition -= cardWidth;
   
-  $("#carouselExampleControls .carousel-inner").animate(
+  $("#controlesCarousel .carousel-inner").animate(
   { scrollLeft: scrollPosition },
     600
   );
