@@ -18,7 +18,7 @@
     <section id="navBar" >
         <header class="p-2 my-auto bg-light text-black-50">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                     <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="img/bubbly-imgs/icons/logo-bubbly.png" alt="Logo principal colorida Bubbly" style="max-width: 120px;"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -153,13 +153,13 @@
 
     <!-- BANNER PRINCIPAL -->    
     <section id="bannerPrincipal" >
-        <div class="row p-0">
+        <div class="p-0">
             <div class="position-relative overflow-hidden text-center bg-light" style="background-image: url(img/bubbly-imgs/bkgs/bkg-1.jpg);" aria-label="banner principal do site com imagem de um músico anotando partituras ao lado de sua guitarra">
                 <div class="col-md-8 p-lg-5 mx-auto my-5 p-4">
                 <h1 class="display-4 font-weight-bolder text-white pt-4">Colocamos seu curso em evidência para o mundo!</h1>
                 <p class="lead font-weight-normal text-white p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio commodi cum qui repudiandae explicabo a similique! Accusantium dolorem non iusto quasi soluta cumque facere repellendus sequi.</p>
-                <a class="btn btn-outline-secondary border-light text-white" href="#featurettes">Saiba mais</a>
-                <img src="img/bubbly-imgs/icons/arrowDown.gif" style="max-width: 15px;" alt="seta animada para baixo">
+                <a class="btn border-light text-white" href="#featurettes">Saiba mais <img src="img/bubbly-imgs/icons/arrowDown.gif" style="max-width: 15px;" alt="seta animada para baixo"></a>
+                
                 </div>
                 <div class="product-device shadow-sm d-none d-md-block"></div>
                 <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -169,8 +169,8 @@
 
 
     <!-- ROW FEATURETTES MARKETING -->    
-    <section id="featurettes" >
-        <div class="row p-5" style="background-color: #f9f9f9;">
+    <section id="featurettes">
+        <div class="p-5" style="background-color: #f9f9f9;">
             <div class="container marketing">
                     <div class="row featurette">
                         <div class="col-md-7">
@@ -179,8 +179,7 @@
                             
                             <div class="input-group" id="BuscarCurso">
                                 <span class="input-group-text">Buscar curso:</span>
-                                <input type="text" aria-label="BuscarCurso" class="form-control">
-                                <!-- <input type="text" aria-label="Last name" class="form-control"> -->
+                                <input type="text" aria-label="BuscarCurso" class="form-control">                                
                                 <button type="button" class="btn btn-outline-secondary">Buscar</button>
                             </div>
 
@@ -189,22 +188,22 @@
                                     <table class="table table-hover">
                                         <thead>
                                           <tr>                                            
-                                            <th scope="col">Cursos encontrados:</th>
-                                            <th scope="col">Avaliação:</th>                                            
+                                            <th scope="col" class="font-weight-bold">Cursos encontrados:</th>
+                                            <th scope="col" class="text-right pr-2">Avaliação:</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>                                            
-                                            <td><a href="#">Javascript Básico</a></td>
-                                            <td>4.7</td>                                            
+                                            <td><a href="#" class="text-info">Javascript Básico</a></td>
+                                            <td class="text-right pr-4 text-black">4.7</td>                                            
                                           </tr>
                                           <tr>                                            
-                                            <td><a href="#">HTML + Jávascript + CSS</a></td>
-                                            <td>4.3</td>                                            
+                                            <td><a href="#" class="text-info">HTML + Jávascript + CSS</a></td>
+                                            <td class="text-right pr-4 text-black">4.3</td>                                  
                                           </tr>
                                           <tr>                                                                                        
-                                            <td><a href="#">Javascript Avançado</a></td>
-                                            <td>3.9</td>
+                                            <td><a href="#" class="text-info">Javascript Avançado</a></td>
+                                            <td class="text-right pr-4 text-black">3.9</td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -219,7 +218,7 @@
             </div>
         </div>
 
-        <div class="row p-5" style="background-color: tomato;">
+        <div class="p-5" style="background-color: tomato;">
             <div class="container marketing">
 
                     <div class="row featurette">
@@ -257,33 +256,41 @@
 
     <!-- CARDS CURSOS EM DESTAQUE API LOCAL -->
     <section id="cardsCursosDestaque">
-        <div class="row container-fluid m-auto pt-4 pb-5">
-            <div class="col-auto" id="myCardsCursosDestaque">
-                <div class="text-left">
-                    <h2 class="col-auto">Cursos em destaque:</h2>
+        <div class="bg-dark d-flex justify-content-center pb-5 pt-3">
+            <div class="col-md-10" id="myCardsCursosDestaque">
+                <div class="col-xs text-left text-light pt-2 m-2">
+                    <h2 class="mb-3 pl-5">Cursos em destaque:</h2>
                 </div>      
-                <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1 col-xl-12" id="rowCardsCursosDestaque">
+                <div class="row row-cols-md-3 m-auto" id="rowCardsCursosDestaque">
                     
                 </div>
-            </div>
-            <div class="btn-group pt-4 col-auto m-auto" role="group" aria-label="Mais opções">
-                <button type="button" class="btn btn-outline-secondary">Ver todos os nossos cursos</button>
-                <button type="button" class="btn btn-outline-secondary">Buscar um curso</button>
-                <button type="button" class="btn btn-outline-secondary">Adicionar o seu próprio curso</button>
-            </div>
-        </div>
-        
+                <div class="d-flex justify-content-center flex-wrap" aria-label="Mais opções">
+                    <button type="button" class="btn btn-outline-light mt-4">Veja mais cursos</button>                    
+                </div>
+            </div>                   
+        </div>             
     </section>
+
+
+
+    <!-- BOTÕES MAIS OPÇÕES -->
+    <!-- <div class="row m-auto p-5" style="background-color: tomato;">
+        <div class="d-flex justify-content-center flex-wrap" aria-label="Mais opções">
+            <button type="button" class="btn btn-outline-light m-2">Ver todos os nossos cursos</button>
+            <button type="button" class="btn btn-outline-light m-2">Buscar um curso</button>
+            <button type="button" class="btn btn-outline-light m-2">Adicionar o seu próprio curso</button>                
+        </div>
+    </div> -->
 
 
     <!-- TESTIMONIAL CARDS API ONLINE -->
     <section id="testimonials">
-        <div class="row container-fluid bg-dark">
-            <div class="col-md-10 p-5 m-auto" id="myCards">
-                <div class="col-xs text-left text-light">
-                    <h2 class="mb-3">O que dizem sobre nós:</h2>
+        <div class="bg-light d-flex justify-content-center pb-5 pt-3">
+            <div class="col-md-10" id="myCards">
+                <div class="col-xs text-left text-dark pt-2 m-2">
+                    <h2 class="mb-3 pl-5">O que dizem sobre nós:</h2>
                 </div>      
-                <div class="row row-cols-md-3" id="row">
+                <div class="row row-cols-md-3 m-auto" id="row">
                     
                 </div>
             </div>       
@@ -292,30 +299,45 @@
     
     
     <!-- FOOTER -->    
-    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-3">
+    <footer>
+        <div class="container col-12 d-flex justify-content-around py-3 my-3">
         
-        <div class="col-md-4 d-flex align-items-center">                
-            <a class="navbar-brand" style="cursor: pointer;">
-                <img src="img/bubbly-imgs/icons/logo-bubbly-f.png" alt="Logo monocromática Bubbly" style="max-width: 100px;"
-                data-bs-placement="right" data-bs-toggle="tooltip" data-bs-html="true"
-                title="<i class='fa-solid fa-copyright'></i> <em>Victor Cova & Danilo Almeida</em><br><u>From TERA DEV's</u> | <b>2022</b>">
-            </a>
-        </div>            
+            <div class="col-md-2 d-flex border-right">
+                <a class="navbar-brand" style="cursor: pointer;">
+                    <img src="img/bubbly-imgs/icons/logo-bubbly-f.png" alt="Logo monocromática Bubbly" style="max-width: 100px;"
+                    data-bs-placement="right" data-bs-toggle="tooltip" data-bs-html="true"
+                    title="<i class='fa-solid fa-copyright'></i> <em>Victor Cova & Danilo Almeida</em><br><u>From TERA DEV's</u> | <b>2022</b>">
+                </a>                                
+            </div>            
+            <div class="col-md-2 d-flex">
+                <ul class="nav col-md-2 list-unstyled flex-nowrap justify-content-end">
+                    <li class="m-2 mr-2 pt-1"><a class="text-muted" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="m-2 mr-2 pt-1"><a class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="m-2 mr-2 pt-1"><a class="text-muted" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="m-2 mr-2 pt-1"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>                    
+                </ul>                                      
+            </div>            
 
-        <ul class="nav justify-content-start col-md-10 align-items-center">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Quem Somos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Parceiros</a></li>                
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Política de Privacidade</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Termos de uso</a></li>
-        </ul>
-    
-        <ul class="nav col-md-2 justify-content-end list-unstyled flex-nowrap">                
-            <li class="ms-4"><a class="text-muted" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li class="ms-4"><a class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="ms-4"><a class="text-muted" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li class="ms-4"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li class="ms-4"><a class="text-muted" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-        </ul>
+            <div class="btn-group dropup col-md-2">
+                <button type="button" class="btn btn-link dropdown-toggle justify-content-end text-black-50" data-bs-toggle="dropdown" aria-expanded="false">
+                Mais Links
+                </button>
+                <!-- <ul class="dropdown-menu bg-dark text-light"> -->
+                    <ul class="dropdown-menu dropdown-menu-macos mx-0 shadow" style="width: 220px;">
+                        <li><a class="dropdown-item" href="#">Quem Somos</a></li>
+                        <li><a class="dropdown-item" href="#">Parceiros</a></li>
+                        <li><a class="dropdown-item" href="#">Termos de uso</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Política de Privacidade</a></li>
+                      </ul>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Quem Somos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Parceiros</a></li>                
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Política de Privacidade</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Termos de uso</a></li> -->
+                </ul>
+            </div>                    
+        </div>
+
     </footer>    
     
     <!-- SCRIPTS -->    

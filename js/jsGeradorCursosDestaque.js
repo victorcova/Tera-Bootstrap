@@ -28,7 +28,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
                     
 
             let col = document.createElement('div')
-            col.setAttribute('class','col p-2');
+            col.setAttribute('class','col-12 p-2');
             rowCardsCursosDestaque.appendChild(col);
 
             let cardShadow = document.createElement('div')
@@ -87,7 +87,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
 
             let pDescricao = document.createElement('p')
             pDescricao.setAttribute('class','card-text pt-3 ml-1');
-            pDescricao.setAttribute('style','text-align: justify;');
+            pDescricao.setAttribute('style','text-align: left;');
             let idDescricao = 'idDescricao'+[i];
             pDescricao.setAttribute('id',idDescricao);
             cardBody.appendChild(pDescricao);    
@@ -96,7 +96,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
 
             let btEmenta = document.createElement('button');
             btEmenta.setAttribute('type','button');
-            btEmenta.setAttribute('class','btn btn-primary me-2 float-end');
+            btEmenta.setAttribute('class','btn btn-dark me-2 float-end');
             cardBody.appendChild(btEmenta);
             btEmenta.innerHTML = "Ver Ementa";
                             
