@@ -17,7 +17,7 @@ var multipleCardCarousel = document.querySelector(
 
   $("#carouselExampleControls .carousel-inner").animate(
   { scrollLeft: scrollPosition },
-    400
+    600
   );
 
   }
@@ -29,7 +29,7 @@ var multipleCardCarousel = document.querySelector(
   
   $("#carouselExampleControls .carousel-inner").animate(
   { scrollLeft: scrollPosition },
-    400
+    600
   );
   }
   });
