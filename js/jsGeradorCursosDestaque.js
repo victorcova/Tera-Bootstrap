@@ -101,7 +101,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
             btEmenta.setAttribute('type','button');
             btEmenta.setAttribute('class','btn btn-dark me-2 float-end');
             cardBody.appendChild(btEmenta);
-            btEmenta.innerHTML = "Ver Ementa";
+            btEmenta.innerHTML = "Ver Cursos";
                             
         }
     })
