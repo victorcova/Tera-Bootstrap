@@ -446,7 +446,7 @@ h1 {
   }
   
   .navbar {
-    background-color: #f7f8fa;
+    background-color: #f9f9f9;
     padding: 49px 0px 63px 0px;
   }
   
@@ -481,12 +481,12 @@ h1 {
   }
   
   .navbar .navbar-menu-wrapper .navbar-nav .nav-link:hover {
-    color: #ff0000;
+    color: tomato;
     transition: all 0.3s ease;
   }
   
   .navbar .navbar-menu-wrapper .navbar-nav .nav-link.active {
-    color: #ff0000;
+    color: tomato;
   }
   
   .navbar .navbar-collapse-logo {
