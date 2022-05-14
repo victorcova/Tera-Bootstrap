@@ -111,6 +111,7 @@
 /* --------------------------------------------------------- */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 h1 {
     font-size: 40px;
@@ -919,6 +920,8 @@ h1 {
     padding: 5px 0px 20px 39px;
   }  
 =======
+=======
+>>>>>>> parent of f32c60e (ajuste-git)
 /* Importing fonts from Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -1011,5 +1014,9 @@ body {
     .owl-carousel .owl-item .card .name {
         left: 30%;
     }
+<<<<<<< HEAD
+}
+>>>>>>> parent of f32c60e (ajuste-git)
+=======
 }
 >>>>>>> parent of f32c60e (ajuste-git)
