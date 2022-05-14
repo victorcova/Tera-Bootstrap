@@ -28,7 +28,7 @@ fetch(url, options) // fez a promise
                     
 
             let col = document.createElement('div')
-            col.setAttribute('class','col-12 p-2');
+            col.setAttribute('class','col p-2');
             row.appendChild(col);
 
             let cardShadow = document.createElement('div')

@@ -26,6 +26,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
             let carouselInner = document.getElementById('carouselInner');                    
 
 
+<<<<<<< HEAD
             let carouselActiveOrItem = document.createElement('div')
             if (itemInicial == 0) {
                 carouselActiveOrItem.setAttribute('class','carousel-item active');
@@ -34,6 +35,11 @@ fetch(urlLocal, optionsLocal) // fez a promise
                 carouselActiveOrItem.setAttribute('class','carousel-item');
             }
             carouselInner.appendChild(carouselActiveOrItem);
+=======
+            let col = document.createElement('div')
+            col.setAttribute('class','col p-2');
+            rowCardsCursosDestaque.appendChild(col);
+>>>>>>> parent of 039cc97 (continuando-pagina)
 
             let card = document.createElement('div')            
             card.setAttribute('class','card');
@@ -91,7 +97,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
             
             let pDescricao = document.createElement('p')
             pDescricao.setAttribute('class','card-text pt-3 ml-1');
-            pDescricao.setAttribute('style','text-align: left;');
+            pDescricao.setAttribute('style','text-align: justify;');
             let idDescricao = 'idDescricao'+[i];
             pDescricao.setAttribute('id',idDescricao);
             cardBody.appendChild(pDescricao);    
@@ -99,7 +105,7 @@ fetch(urlLocal, optionsLocal) // fez a promise
 
             let btEmenta = document.createElement('button');
             btEmenta.setAttribute('type','button');
-            btEmenta.setAttribute('class','btn btn-dark me-2 float-end');
+            btEmenta.setAttribute('class','btn btn-primary me-2 float-end');
             cardBody.appendChild(btEmenta);
             btEmenta.innerHTML = "Ver Cursos";
                             
