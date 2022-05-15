@@ -1,3 +1,5 @@
+AOS.init();
+
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
@@ -44,12 +46,12 @@ BTNbuttonCadastraInformativos.addEventListener("click", function() {
     // alert("Preencha seu e-mail corretamente");
     cadMailInfos.focus();
     divresultCadastroInformativos.style.display = "block";
-    divresultCadastroInformativos.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Email não preenchido!`;    
+    divresultCadastroInformativos.innerHTML = `<i class="fa-solid fa-triangle-exclamation bg-tomato-outline"></i> Email não preenchido!`;    
   }else{
     cadMailInfos.value = "";
     cadMailInfos.focus();
     divresultCadastroInformativos.style.display = "block";
-    divresultCadastroInformativos.innerHTML = `<i class="fa-solid fa-thumbs-up"></i> E-mail Cadastrado!`;
+    divresultCadastroInformativos.innerHTML = `<i class="fa-solid fa-thumbs-up bg-bluebubbly-outline"></i> E-mail Cadastrado!`;
   }
     
 });
@@ -80,29 +82,29 @@ $(document).ready(function () {
   });
 });
 
-// HEADER ANIMATION
-window.onscroll = function() {scrollFunction()};
-var element = document.getElementById("body");
-function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-      $(".navbar").addClass("fixed-top");
-      element.classList.add("header-small");
-      $("body").addClass("body-top-padding");
+// // HEADER ANIMATION
+// window.onscroll = function() {scrollFunction()};
+// var element = document.getElementById("body");
+// function scrollFunction() {
+//   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 200) {
+//       $(".navbar").addClass("fixed-top");
+//       element.classList.add("header-small");
+//       $("body").addClass("body-top-padding");
 
-  } else {
-      $(".navbar").removeClass("fixed-top");
-      element.classList.remove("header-small");
-      $("body").removeClass("body-top-padding");
-  }
-}
+//   } else {
+//       $(".navbar").removeClass("fixed-top");
+//       element.classList.remove("header-small");
+//       $("body").removeClass("body-top-padding");
+//   }
+// }
 
 // OWL-CARROUSEL
 $('.owl-carousel').owlCarousel({
     items: 1,
-    loop:true,
+    loop:false,
     nav:false,
     dot:true,
-    autoplay: true,
+    autoplay: false,
     slideTransition: 'linear',
     autoplayHoverPause: true,
     responsive:{

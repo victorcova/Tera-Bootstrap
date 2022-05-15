@@ -8,14 +8,14 @@
         
     <link href='css/bootstrap-v5-alpha1.css' rel='stylesheet'>        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">        
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">    
 
     <link rel="stylesheet" href="vendors/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/owl-carousel/css/owl.theme.default.css">
 
     <link rel="stylesheet" href="css/bubblyStyle.css">    
-    
-    
+
     <link rel="icon" type="image/x-icon" href="img/bubbly-imgs/icons/favicon.ico">    
 
     <title>Tera Treinamento Bootstrap #03 (Bubbly)</title>
@@ -23,8 +23,8 @@
 
 <body>
     <!-- NAVBAR -->       
-    <section id="navBar" >
-        <header class="p-2 my-auto bg-light text-black-50">
+    <section id="navBarZ">
+        <header class="bg-light">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                     <div class="container">
@@ -33,15 +33,15 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 pl-lg-5 ml-lg-2">
 
                             
-                            <li><a href="#" class="nav-link text-black">Home</a></li>              
+                            <li><a href="#" class="nav-link text-black pl-2">Início</a></li>              
                             <li class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>
+                            <a class="nav-link dropdown-toggle text-black pl-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3+<span class="visually-hidden">unread messages</span></span>
-                                <li><a class="dropdown-item" href="#">Ver todos os cursos</a></li>
+                                <li><a class="dropdown-item pl-2" href="#">Ver todos os cursos</a></li>
                                 <li><hr class="dropdown-divider"></li>                  
                                 <li><a class="dropdown-item" href="#">Tecnologia</a></li>
                                 <li><a class="dropdown-item" href="#">Gastronomia</a></li>                  
@@ -52,7 +52,7 @@
                             </ul>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link text-black" href="#">Afilie-se</a> 
+                            <a class="nav-link text-black pl-2" href="#">Afilie-se</a> 
                             </li>                            
                         </ul> 
                             
@@ -161,27 +161,25 @@
 
     <!-- BANNER PRINCIPAL -->    
     <section id="bannerPrincipal" >
-        <div class="p-0">
-            <div class="position-relative overflow-hidden text-center bg-light" style="background-image: url(img/bubbly-imgs/bkgs/bkg-1.jpg);" aria-label="banner principal do site com imagem de um músico anotando partituras ao lado de sua guitarra">
+        <div class="p-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="200">
+            <div class="position-relative overflow-hidden text-center bg-light pt-5 mt-5" style="background-image: url(img/bubbly-imgs/bkgs/bkg-1.jpg);" aria-label="banner principal do site com imagem de um músico anotando partituras ao lado de sua guitarra">
                 <div class="col-md-8 p-lg-5 mx-auto my-5 p-4">
                 <h1 class="display-4 font-weight-bolder text-white pt-4">Colocamos seu curso em evidência para o mundo!</h1>
-                <p class="lead font-weight-normal text-white p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio commodi cum qui repudiandae explicabo a similique! Accusantium dolorem non iusto quasi soluta cumque facere repellendus sequi.</p>
-                <a class="btn btn-tomato" href="#featurettes">Saiba mais <img src="img/bubbly-imgs/icons/arrowDown.gif" style="max-width: 15px;" alt="seta animada para baixo"></a>
+                <p class="lead font-weight-normal text-white p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio commodi cum qui repudiandae explicabo a similique! Accusantium dolorem non iusto quasi soluta cumque facere repellendus sequi.</p>                                          
+                <a class="btn btn-tomato" href="#nextId">Saiba mais <img src="img/bubbly-imgs/icons/arrowDown.gif" style="max-width: 15px;" alt="seta animada para baixo"></a><div id="nextId"></div>  
                 
-                </div>
-                <div class="product-device shadow-sm d-none d-md-block"></div>
-                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-            </div> 
+                </div>                
+            </div>             
         </div>
     </section>
 
 
     <!-- FEATURETTES MARKETING -->        
     <section id="featurettes">
-        <div class="p-5" style="background-color: #f9f9f9;">
+        <div class="p-5">
             <div class="container marketing">
                     <div class="row featurette">
-                        <div class="col-md-7">
+                        <div class="col-md-7" data-aos="fade-right">
                             <h2 class="featurette-heading">Lorem ipsum dolor <span class="text-muted">It’ll blow your mind.</span></h2>
                             <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos.</p>
                             
@@ -219,46 +217,45 @@
                             </div>
 
                         </div>                
-                        <div class="col-md-5 align-content-center pt-4">
+                        <div class="col-md-5 align-content-center pt-4" data-aos="fade-left">
                             <img src="img/bubbly-imgs/bkgs/bkg-7.jpg" class="rounded-3 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="bela mulher branca loira de óculos sorrindo, estudando com o notebook e tomando um café">
                         </div>
                     </div>        
             </div>
         </div>
 
-        <div class="p-5" style="background-color: tomato;">
+        <div class="p-5">
             <div class="container marketing">
 
                     <div class="row featurette">
-                        <div class="col-md-5">
+                        <div class="col-md-5" data-aos="fade-right">
                             <img src="img/bubbly-imgs/bkgs/bkg-6.jpg" class="rounded-3 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="homem negro no notebook, sorrindo, com fone de ouvindo escutando uma prazeroso conteúdo">
                         </div>
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading text-black pt-3">Sit amet consectetur <span class="text-light">It’ll blow your mind.</span></h2>
-                            <p class="lead text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos. <strong>Corrupti doloribus:</strong></p>
+                        <div class="col-md-7" data-aos="fade-left">
+                            <h2 class="featurette-heading text-black pt-3">Sit amet consectetur <span class="text-muted">It’ll blow your mind.</span></h2>
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, similique repellat! Quia magnam aliquid blanditiis, recusandae, quos amet molestias corrupti doloribus, nihil sapiente provident eos. <strong>Corrupti doloribus:</strong></p>
 
                             <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2" id="cadMailInfos">
 
                             <div class="form-check m-1 mt-2">
-                                <input class="form-check-input btn-outline-light" type="checkbox" value="aceitaTermos" id="aceitaTermosLgpd" checked disabled>
-                                <label class="form-check-label text-light" for="aceitaTermosLgpd">
+                                <input class="form-check-input" type="checkbox" value="aceitaTermos" id="aceitaTermosLgpd" checked disabled>
+                                <label class="form-check-label" for="aceitaTermosLgpd">
                                     LGPD: Permito o uso do meu e-mail
                                 </label>
                               </div>
                               <div class="form-check m-1">
                                 <input class="form-check-input" type="checkbox" value="querOfertas" id="querOfertas" checked>
-                                <label class="form-check-label text-light" for="querOfertas">
+                                <label class="form-check-label" for="querOfertas">
                                     Desejo receber ofertas e promoções
                                 </label>
                               </div>                                                    
 
                             <div class="d-flex">
                                 <div class="col-md-4">
-                                    <button class="btn btn-outline-light mt-3 p-2" type="button" id="buttonCadastraInformativos">Receber ofertas</button>
+                                    <button class="btn btn-outline-dark mt-3 p-2" type="button" id="buttonCadastraInformativos">Receber ofertas</button>
                                 </div>
                                 <div class="col-md-1 m-2"></div>
-                                <div class=" col-md-7 mt-3 border-start border-2 text-light p-2 font-weight-bold" id="resultCadastroInformativos">
-                                    Cadastro efetuado!
+                                <div class=" col-md-7 mt-3 border-start border-2 p-2" id="resultCadastroInformativos">                                    
                                 </div>
                             </div>
 
@@ -270,7 +267,7 @@
     </section>
 
     <!-- CARDS CURSOS EM DESTAQUE API LOCAL -->
-    <section id="cardsCursosDestaque">
+    <section id="cardsCursosDestaque" data-aos="fade-up">
         
         <div id="controlesCarousel" class="carousel bg-dark pb-5" data-bs-ride="carousel">
 
@@ -280,7 +277,7 @@
                 </h6>
             </div>
                         
-            <div class="col-md-10 m-auto">
+            <div class="container-fluid m-auto">
                 <div class="carousel-inner pb-5" id="carouselInner">
                     <!--CARDS API -->         
                 </div>                
@@ -315,7 +312,7 @@
     </section> -->
 
     <!-- TESTIMONIAL OFFLINE -->
-    <section class="container customer-feedback" id="feedback-section">
+    <section class="container customer-feedback" id="feedback-section" data-aos="fade-up">
         <div class="row">
             <div class="col-12 text-center pt-5">
                 <h2>O que dizem sobre nós:</h2>
@@ -326,11 +323,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face1.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Tony Martinez</h6>
+                            <h6 class="card-title pt-3">Toni Clésio</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -338,11 +335,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face2.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Sophia Armstrong</h6>
+                            <h6 class="card-title pt-3">Kellen Yamamaru</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -350,11 +347,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face3.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Cody Lambert</h6>
+                            <h6 class="card-title pt-3">Marcos Gomes</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -362,11 +359,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face15.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face4.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Cody Lambert</h6>
+                            <h6 class="card-title pt-3">Daniel Sampaio</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -374,11 +371,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face16.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face5.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Cody Lambert</h6>
+                            <h6 class="card-title pt-3">Maicon Telles</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -386,11 +383,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face1.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face6.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Tony Martinez</h6>
+                            <h6 class="card-title pt-3">Rodrigo Almeida</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -398,11 +395,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face2.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face7.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Tony Martinez</h6>
+                            <h6 class="card-title pt-3">Pollyana de Sá</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -410,11 +407,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face3.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face8.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Sophia Armstrong</h6>
+                            <h6 class="card-title pt-3">Bruna Fernandes</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -422,11 +419,11 @@
                 <div class="card customer-cards">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="images/face20.jpg" width="89" height="89" alt="" class="img-customer">
+                            <img src="img/bubbly-imgs/testimonials/face9.jpg" width="89" height="89" alt="" class="img-customer">
                             <p class="m-0 py-3 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.
                                 Fusce egeabus consectetuer turpis, suspendisse.</p>
                             <div class="content-divider m-auto"></div>
-                            <h6 class="card-title pt-3">Cody Lambert</h6>
+                            <h6 class="card-title pt-3">Kleiton Alves</h6>
                             <h6 class="customer-designation text-muted m-0">Marketing Manager</h6>
                         </div>
                     </div>
@@ -440,7 +437,7 @@
     
     <!-- FOOTER -->    
     <footer>
-        <div class="container col-12 d-flex justify-content-around py-3 my-3">
+        <div class="container col-12 d-flex justify-content-around py-3 my-3" data-aos="zoom-out-up">
         
             <div class="col-md-2 d-flex border-end border-1">
                 <a class="navbar-brand" style="cursor: pointer;">
@@ -480,6 +477,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>             
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
 
